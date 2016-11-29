@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="30dp"
+            android:layout_margin="8dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/joke" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="匿名用户"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:padding="18dp"
+        android:textColor="#3c3f41"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="您好像没有获取到数据哦~"
+         />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"  />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:gravity="right|bottom"
+        android:textColor="#3c3f41"
+        android:paddingRight="10dp"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="2014-07-18 12:30"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#bbbbbb">
+    </View>
+
+
+
+</LinearLayout>

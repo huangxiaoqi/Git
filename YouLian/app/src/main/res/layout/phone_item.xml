@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:padding="10dp"
+              android:background="#ffffff"
+    >
+    <com.huangjiazhong.youlian.view.CustomShapeImageView
+        android:id="@+id/phone_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/login"
+        app:borderColor="#ffffff"
+        app:imageBorderWidth="2dp"
+        app:onlyDrawBorder="false"
+        app:shape="circle"
+        app:roundRadius="1dp"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="名称"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="电话号码"
+            android:textColor="#D4D0C8"
+            android:textSize="17sp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_friend_state"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/phone"/>
+</LinearLayout>

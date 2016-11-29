@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFFFFF"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingTop="10dp"
+              tools:context=".activity.MainActivity">
+
+    <!-- 时间 -->
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#97C024"
+        android:gravity="center"
+        android:text="2014 3:32"
+        android:textColor="#000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <!-- 头像 -->
+        <com.huangjiazhong.youlian.view.CustomShapeImageView
+            android:id="@+id/chat_receive_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:fitsSystemWindows="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/login"
+            app:borderColor="#ffffff"
+            app:imageBorderWidth="2dp"
+            app:onlyDrawBorder="false"
+            app:shape="circle"
+            app:roundRadius="3dp"/>
+
+        <!-- 信息 -->
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chat_receive_avatar"
+            android:background="@drawable/incoming"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/iv_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chat_receive_avatar"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
